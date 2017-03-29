@@ -21,7 +21,7 @@
       },
       {
         id: 2,
-        task; 'Turnup again',
+        task: 'Turnup again',
         done: false
       }
     ]
