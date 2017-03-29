@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="todosApp">
+  <head>
+    <meta charset="utf-8">
+    <title>BUCKET LIST</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/todosController.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="container main" ng-controller="TodosController as todosCtrl">
+    <h2> You are down to {{allTodos.length}} to go, keep on moving </h2>
+    <form class="form-inline" id="add-todo" ng-submit="add()">
+  </body>
+</html>
