@@ -36,7 +36,7 @@
     function addTodo() {
       self.allTodos.push({
         id: self.ids,
-        task: self.newTodo = '',
+        task: self.newTodo,
         done: false
       })
       self.ids++
