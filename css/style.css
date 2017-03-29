@@ -1,3 +1,7 @@
+
+.done {
+  text-decoration: line-through
+}
 .form-inline .form-control {
     display: inline-block;
     width: 80%;
