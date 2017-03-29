@@ -16,5 +16,19 @@
     <form class="form-inline" id="add-todo" ng-submit="add()">
     <label class="sr-only" for="todosCtrl.newTodo.task">Task</label>
     <input class="form-control wide" type="text" placeholder="Is there anything you are wishing to do next?" ng-model="todosCtrl.newTodo.task"/>
+
+
+    <h2>Tasks: </h2>
+    <ul>
+      <li ng-repeat="todo in todosCtrl.allTodos">
+        {{todo.id}}.
+        <strong>{{todo.task}}</strong> ||
+        Completed? - {{todo.done}}
+      </li>
+    </ul>
+
+
+
+
   </body>
 </html>
