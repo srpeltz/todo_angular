@@ -37,7 +37,7 @@
       self.allTodos.push({
         id: self.ids,
         task: self.newTodo = '',
-        incorporated: false
+        done: false
       })
       self.ids++
       self.newTodo.task = ''
