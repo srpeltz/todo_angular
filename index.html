@@ -10,11 +10,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body ng-src="https://s-media-cache-ak0.pinimg.com/564x/33/78/65/337865896546aafde78f3d4df503640e.jpg">
     <div class="container main" ng-controller="TodosController as todosCtrl">
     <h2> You are down to {{allTodos.length}} to go, keep on moving </h2>
-    <form class="form-inline" id="add-todo" ng-submit="add()">
+    <form class="form-inline" id="add-todo" ng-submit="addTodo()">
     <label class="sr-only" for="todosCtrl.newTodo.task">Task</label>
-    <input class="form-control wide" type="text" placeholder="Is there anything you are wishing to do next?" ng-model="todosCtrl.newTodo.task"/>
+    <input class="form-control" type="text" placeholder="Is there anything you are wishing to do next?" ng-model="todosCtrl.newTodo.task"/>
+    <label class="sr-only" for="todosCtrl.newTodo.done">Done?</label>
+    <input class="form-control" type="text" placeholder="Are you done with this?" ng-model="todosCtrl.newTodo.done"/>
   </body>
 </html>
