@@ -15,8 +15,18 @@
     <h2> You are down to {{allTodos.length}} to go, keep on moving </h2>
     <form class="form-inline" id="add-todo" ng-submit="addTodo()">
     <label class="sr-only" for="todosCtrl.newTodo.task">Task</label>
+    <input class="form-control wide" type="text" placeholder="Is there anything you are wishing to do next?" ng-model="todosCtrl.newTodo.task"/>
+    <h2>Tasks: </h2>
+    <ul>
+      <li ng-repeat="todo in todosCtrl.allTodos">
+        {{todo.id}}.
+        <strong>{{todo.task}}</strong> ||
+        Completed? - {{todo.done}}
+      </li>
+    </ul>
     <input class="form-control" type="text" placeholder="Is there anything you are wishing to do next?" ng-model="todosCtrl.newTodo.task"/>
     <label class="sr-only" for="todosCtrl.newTodo.done">Done?</label>
     <input class="form-control" type="text" placeholder="Are you done with this?" ng-model="todosCtrl.newTodo.done"/>
+
   </body>
 </html>
